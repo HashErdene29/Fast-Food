@@ -6,6 +6,7 @@ public class Controller {
 	Food food = new Food("Khuushuur", 800.0, "Naadmiin khuushuur");
 	Menu menu = new Menu();
 	Order order = new Order();
+	Order order2 = new Order();
 	
 	
 	public Controller() {
