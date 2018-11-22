@@ -3,12 +3,12 @@ package fastfood.food;
 public class Food {
 	private String foodName;
 	private Double price;
-	private String discription;
+	private String description;
 	
 	public Food(String foodName, Double price, String discription) {
 		this.foodName = foodName;
 		this.price = price;
-		this.discription = discription;
+		this.description = description;
 	}
 	
 	public String getFoodName() {
@@ -24,10 +24,10 @@ public class Food {
 		this.price = price;
 	}
 	public String getDiscription() {
-		return discription;
+		return description;
 	}
-	public void setDiscription(String discription) {
-		this.discription = discription;
+	public void setDiscription(String description) {
+		this.description = description;
 	}
 	
 	
