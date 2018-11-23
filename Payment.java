@@ -17,6 +17,6 @@ public class Payment {
 	}
 	
 	public void makePayment() {
-		System.out.println("Hereglegch: " + Customer.getAccount() + "Zahialgiin dugaar: " + Order.getNumber + "Uniin dun: " + amount);
+		System.out.println("Hereglegch: " + Customer.getAccount() + "Zahialgiin dugaar: " + Order.getId + "Uniin dun: " + amount);
 	}
 }
