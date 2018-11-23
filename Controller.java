@@ -5,7 +5,8 @@ public class Controller {
 	Food food1 = new Food("Buuz", 600.0, "Khachir-tai");
 	Food food2 = new Food("Hotdog", 3500.0, "Kola-tai");
 	Menu menu = new Menu();
-	Customer cust1 = new Customer("Baigal", 99210933, "BZD-6 khoroo");
+	Customer cust1 = new Customer();
+	Account acc1 = new Account(20000, 585404);
 	Order order = new Order();
 	Order order2 = new Order();
 	
@@ -16,6 +17,10 @@ public class Controller {
 		menu.addFood(food1);
 		menu.addFood(food2);
 		order.addMenu(menu);
+		cust1.setName("Baigal");
+		cust1.setPhoneNumber(99210933);
+		cust1.setAddress("BZD 6-khoroo");
+		cust1.setAccount(acc1);
 		order.addCustomer(cust1);
 		menu.showMenu();
 		
