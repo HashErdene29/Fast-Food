@@ -1,15 +1,17 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Customer {
 	private String name;
 	private int phoneNumber;
 	private String address;
-	public List<Account> accounts;
+	public List<Account> accounts = new ArrayList<>();
 	
-	public Customer(String name, int phoneNumber, String address) {
+	public Customer() {
 		this.name = name;
 		this.phoneNumber = phoneNumber;
 		this.address = address;
+		this.accounts = accounts;
 	}
 	
 	public String getName() {
