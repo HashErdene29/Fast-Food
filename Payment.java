@@ -3,6 +3,7 @@ public class Payment {
 	private String chooseBank;
 	
 	public double getAmount() {
+		this.amount = Order.getTotalPrice();
 		return amount;
 	}
 	public void setAmount(double amount) {
@@ -16,6 +17,6 @@ public class Payment {
 	}
 	
 	public void makePayment() {
-		System.out.println("Hereglegch: " + "" + "Zahialgiin dugaar: " + "" + "Uniin dun" + amount + "");
+		System.out.println("Hereglegch: " + Customer.getAccount() + "Zahialgiin dugaar: " + Order.getNumber + "Uniin dun: " + amount);
 	}
 }
